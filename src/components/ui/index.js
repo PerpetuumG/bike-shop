@@ -10,8 +10,8 @@ const Wrapper = styled.div`
 const Flex = styled.div`
   display: flex;
   width: ${({width}) => (width ? width : null)};
-  justify-content: ${({justify}) => (justify ? justify : null)};
-  align-items: ${({align}) => (align ? align : null)};
+  justify-content: ${({justify}) => (justify ? justify : 'center')};
+  align-items: ${({align}) => (align ? align : 'center')};
   flex-wrap: ${({wrap = 'no-wrap'}) => wrap};
   flex-direction: ${({direction}) => (direction ? direction : 'row')};
   padding: ${({padding}) => (padding ? padding : null)};
@@ -80,7 +80,9 @@ const Button = styled.button`
   font-size: 18px;
   font-weight: bold;
   text-transform: uppercase;
-  color: #020106;
+  color: ${({color}) => (color ? color : '#020106')};
+  background: ${({background}) => (background ? background : '#e6110c')};
+  width: ${({width}) => (width ? width : '470px')};
   height: 60px;
   border: none;
   display: flex;
