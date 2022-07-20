@@ -30,8 +30,8 @@ const Title = styled.h2`
   color: #020106;
   padding: ${({padding}) => (padding ? padding : null)};
   margin: ${({margin}) => (margin ? margin : '0')};
-  border-left: ${({withBorder}) => (withBorder ? withBorder : null)};
-  padding-left: ${({withBorder}) => (withBorder ? withBorder : null)};
+  border-left: ${({withBorder}) => (withBorder ? '3px solid #e6110c' : null)};
+  padding-left: ${({withBorder}) => (withBorder ? '15px' : null)};
 `
 
 const SubTitle = styled.h3`
