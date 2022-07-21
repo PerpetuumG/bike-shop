@@ -60,8 +60,9 @@ function Carousel({children, width = '670px', height = '502px'}) {
                 </SlideBtn>
             </Container>
 
-            <Flex width={'670px'} gap={'10px'} margin={'38px 0 0'} wrap={'wrap'}></Flex>
-            {children.map((item, i) => <SlideItem key={i} onClick={selectSlide(i)}>{item}</SlideItem>)}
+            <Flex width={'670px'} gap={'10px'} margin={'38px 0 0'} wrap={'wrap'}>
+                {children.map((item, i) => <SlideItem key={i} onClick={selectSlide(i)}>{item}</SlideItem>)}
+            </Flex>
         </div>
     )
 }

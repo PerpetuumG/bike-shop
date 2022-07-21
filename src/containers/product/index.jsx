@@ -21,7 +21,7 @@ const colors = [
     },
     {
         id: 2,
-        color: 'linear-gradient(180deg, #8b2936 1.47%, #000000)'
+        color: 'linear-gradient(180deg, #8b2936 1.47%, #000000 100%)'
     },
     {
         id: 3,
@@ -66,8 +66,8 @@ function Product() {
                     </Flex>
                     <Flex width={'470px'} direction={'column'} align={'flex-start'} justify={'space-between'}>
                         <Title withBorder>
-                            fuel ex9.8<
-                            /Title>
+                            fuel ex9.8
+                        </Title>
                         <Flex justify={'space-between'} width={'100%'} margin={'30px 0 20px'}>
                             <Text weight={500}>
                                 2021

@@ -16,16 +16,17 @@ export const Label = styled.label`
   color: #282828;
   margin-top: ${({first}) => (first ? '20px' : '24px')};
 
-  display: inline-block;
+  display: inline-flex;
   align-items: center;
   user-select: none;
 `
 
 export const Checked = styled.span`
-  height: 12px;
   width: 12px;
+  height: 12px;
   margin-right: 16px;
   border-radius: 50%;
   border: 2px solid #fff;
-  box-shadow: ${({checked}) => (checked ? '#282828' : '#fff')};;
+  box-shadow: 0px 0px 0px 2px #282828;
+  background: ${({checked}) => (checked ? '#282828' : '#fff')};
 `
