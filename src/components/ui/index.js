@@ -25,7 +25,7 @@ const Flex = styled.div`
 const Title = styled.h2`
   font-family: 'Roboto', sans-serif;
   font-size: 32px;
-  font-weight: bold;
+  font-weight: 700;
   text-transform: uppercase;
   color: #020106;
   padding: ${({padding}) => (padding ? padding : null)};

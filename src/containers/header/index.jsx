@@ -3,7 +3,7 @@ import {Wrapper, Flex, Button} from "components/ui";
 import {Absolute, HeaderSC, HeaderText} from "./styled";
 import {ReactComponent as Logo} from "assets/logo.svg";
 
-function Header() {
+function Header({handleProductScroll}) {
     return (
         <HeaderSC>
             <Wrapper relative height={'100%'}>
@@ -14,7 +14,7 @@ function Header() {
                     <HeaderText red weight={700}>НОВЫЙ</HeaderText>
                     <HeaderText>идеальный</HeaderText>
                     <HeaderText size={'71px'} weight={900} space={'30px'}>Fuel EX 9.8 GX</HeaderText>
-                    <Button>оформить заказ</Button>
+                    <Button onClick={handleProductScroll}>оформить заказ</Button>
                 </Absolute>
             </Wrapper>
         </HeaderSC>
